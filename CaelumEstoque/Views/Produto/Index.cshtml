@@ -3,7 +3,6 @@
 @{
     Layout = null;
 }
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +22,9 @@
             {
                 <tr>
                     <td>@produto.Id</td>
-                    <td>@Html.ActionLink(produto.Nome, "Visualiza", new { id = produto.Id })</td>
+                    <td>
+                        @Html.RouteLink(produto.Nome, "VisualizaProduto", new { id = produto.Id })
+                    </td>
                     <td>@produto.Preco</td>
                 </tr>
             }
