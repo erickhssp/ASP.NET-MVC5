@@ -30,7 +30,7 @@ namespace CaelumEstoque.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryTokenAttribute]
+        [ValidateAntiForgeryToken]
         public ActionResult Adiciona(Produto produto)
         {
             int idDaInformatica = 1;
